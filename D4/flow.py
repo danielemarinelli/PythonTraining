@@ -41,3 +41,16 @@ else:
 
 print("Your discount is:", discount)
 print("Payment amount after discount: ",amount-discount)
+
+# one line if else -> ternary operator
+a1 = input("Enter a: ")
+a = int(a1)
+b1 = input("Enter b: ")
+b = int(b1)
+
+if a > b:
+    print("a is greater than b")
+else:
+    print("a is less than b")
+
+print("a is greater") if a > b else print("b greater than a")
