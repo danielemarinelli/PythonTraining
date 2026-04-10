@@ -25,5 +25,19 @@ while i<=4:
 
 name=""
 while name!="Daniele":
-    name=input("Enter your name: ")
+    name=input("Enter your name please: ")
 print("Thanks for checking in Daniele")
+
+# Discount
+amount = int(input("Enter your amount: "))
+if amount > 10000:
+    discount = amount * 20 / 100
+elif amount > 5000:
+    discount = amount * 10 / 100
+elif amount > 1000:
+    discount = amount * 5 / 100
+else:
+    discount=0
+
+print("Your discount is:", discount)
+print("Payment amount after discount: ",amount-discount)
