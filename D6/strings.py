@@ -63,3 +63,17 @@ print("I love {}".format(tt))
 print(tt.find("l")) #returns the index that starts from 0
 print(tt.find("z")) #returns -1 if not found
 
+print(tt.count("p"))  # 2
+print(tt.count("pl"))  # 1
+
+print(t.replace("e","Z"))
+
+b = "babbo12345"
+print(b.isalnum())  # returns true if alphanumeric
+print(b.isalpha())  # returns true ONLY ALPHABET
+print(c.replace("!"," "))
+print(c.isalpha())
+print(b.isdecimal())  # true is only numbers
+
+l="333"
+print(l.isnumeric())
