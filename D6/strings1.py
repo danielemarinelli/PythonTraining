@@ -14,11 +14,11 @@ print(s5)
 print("a" in s2)
 print("Z" not in s2)
 
-#Remove spaces
+#Remove spaces from string
 d = "  Daniele  "
-print(d.rstrip())
-print(d.lstrip())
-print(d.strip())
+print(d.rstrip())   # right spaces
+print(d.lstrip())  # left spaces
+print(d.strip())   # all spaces removed
 
 #compare strings
 
@@ -52,9 +52,16 @@ p="/".join(h)
 print(p)
 p=" ".join(h)
 print(p)
+email = 'xyz@gmail.com'
+lst_email=email.split('@')
+print(lst_email)
+print(lst_email[0])
+
 
 
 q= "Yesterday they elected the Pope. Everyone was very very very happy"
+lst_q=q.split(' ')
+print(lst_q)
 print(q.upper())
 print(q.swapcase())
 
@@ -62,3 +69,23 @@ pope ="Leone XIV"
 city = "Rome"
 print(f"Yesterday they elected {pope}. Everyone was very very very happy in {city}")
 print("Yesterday they elected {}. Everyone was very very very happy in {}".format(city, pope))
+
+
+#isdecimal()   only (0-9)
+print("980".isdecimal())  #True
+print("980.3".isdecimal())  #False
+#isdigit()
+print("980".isdigit())  #True
+print("980.3".isdigit())  #False
+#isnumeric()
+print("980".isnumeric())  #True
+print("980.3".isnumeric())  #False
+
+
+# startwith() / endswith() --> returns True/False
+name="Daniele"
+print(name.startswith("D"))
+print(name.startswith("Dan"))
+print(name.endswith("elem"))
+print(name.endswith("ele"))
+
