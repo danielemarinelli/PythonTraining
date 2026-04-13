@@ -1,5 +1,5 @@
 #Creation TUPLE  (READ ONLY LIST!!!!!)
-
+# IMMUTABLE OBJECT
 t = () #empty tuple
 
 print(t)
@@ -52,3 +52,42 @@ pp = (x**2 for x in range(1,7))
 print(pp)
 print(list(pp))
 print(type(pp))
+
+
+teams=("lakers","Cavs","Celtics","Rockets","Nets","Knicks")
+print(teams[2])
+print(teams[1:4])
+print(teams[-3:-1])
+#change a value in tuple
+# by default tuple is IMMUTABLE, we can't change value directly
+# teams[3] = "Clippers"  NOT POSSIBLE/ERROR
+# but if we cast into list, then we can change items
+# tuple -> list -> tuple
+print("before casting its a tuple (immutable)",teams)
+teams_list = list(teams)
+print("after casting its a list (mutable)",teams_list)
+teams_list[3] = 'Scavolini'
+print("after changing ",teams_list)
+teams_tuple = tuple(teams_list)
+print(teams_tuple)
+print(len(teams_tuple))
+
+#retrive items in tuple with loop
+for i in teams_tuple:
+    print(i)
+
+if "cavolini" in teams_tuple:
+    print("present!!")
+else:
+    print("not present!!")
+
+
+#cannot add or remove values into a tuple because IMMUTABLE
+#copy tuple
+teams_tuple = teams
+print(teams_tuple)
+#join tuple
+tuple1=(1,4,88)
+tuple2=("Juve","Lazio")
+tuple3=tuple1+tuple2
+print(tuple3)
