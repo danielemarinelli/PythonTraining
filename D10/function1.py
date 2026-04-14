@@ -20,6 +20,19 @@ def wish(name,msg):
 wish("Federica",msg= "You are beautiful")
 
 #----------------
+#Mix between positional arguments and keyword arguments
+def show_numbers(x,y,z):
+    print(x,y,z)
+
+show_numbers(1,2,3)   # this is positional args
+show_numbers(x=1,y=2,z=3)     # this is keyword args
+show_numbers(1,2,z=3)   #this is mixing both pos and keyw
+show_numbers(1,y=2,z=3)    #this is mixing both pos and keyw
+#show_numbers(x=1,2,z=3)   ----> ERROR: positional arguments MUST appear before any keyword argument
+#show_numbers(x=1,2,3)    ----> ERROR:
+#show_numbers(1,2,y=3)  ---> LOGIC ERROR: y is overridden and z is not specified
+
+#----------------
 #default arguments
 
 def wish(name="Daniele",msg=" it's late!!"):
@@ -58,9 +71,16 @@ def create_user_profile(name, age, **additional_info):  # ** variable length arg
 create_user_profile("Daniele","46", location="Buffalo", profession="Python Tester", hobbies="NFL")
 create_user_profile("Federica","45", profession="Cuoca")
 
+# Function can return multiple values
+def largest(k,h):
+    if k > h:
+        return k,h,0
+    else:
+        return h,k,-1
 
-
-
+print(largest(2,30))
+r = largest(2000,309)   # r is a TUPLE
+print(type(r))     # By default, function return a TUPLE, when has more values to return!
 
 
 
