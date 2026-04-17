@@ -9,6 +9,7 @@ so that warning won't show in the results
 
 import pytest
 
+
 @pytest.mark.testing_sanity
 @pytest.mark.testing_regression
 def test_loginbyemail():
@@ -21,7 +22,7 @@ def test_loginbyfacebook():
     assert 1 == 1
 
 @pytest.mark.phone
-def test_loginbyphone():
+def test_loginbyphone(setup):
     print("this is login by phone")
     assert 1 == 1
 
@@ -39,7 +40,7 @@ def test_signupbyfacebook():
     assert True == True
 
 @pytest.mark.phone
-def test_signupbyphone():
+def test_signupbyphone(setup):
     print("This is signup by phone test")
     assert True == True
 
