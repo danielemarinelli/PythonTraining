@@ -22,6 +22,8 @@ playwright install
 # command to execute ---->
 # pytest _Playwright/test_playwright_sync.py -v -s --headed
 # pytest _Playwright/test_playwright_sync.py -v -s
+# pytest _Playwright/test_playwright_sync.py -v -s --headed --browser chromium --browser firefox
+# IN PARALLEL EXECUTION --> pytest test_playwright.py -s -v --headed --browser chromium -n=2
 
 from playwright.sync_api import Page, expect
 
