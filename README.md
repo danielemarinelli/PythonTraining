@@ -1,3 +1,6 @@
+Before diving into the API framework and UI framework, there are folders were basic Python comands are explained as tutorial
+---------------------------------------------------------------------------------
+
 Documentation for API :
 BaseURI : http://216.10.245.166
  
