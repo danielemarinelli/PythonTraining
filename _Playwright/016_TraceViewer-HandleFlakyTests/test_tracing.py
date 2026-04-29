@@ -27,6 +27,8 @@ def test_traceViewer(playwright:Playwright):
     #when created, there are two ways to open the .zip file --> cmd line or website
     # cmd ===>> playwright show-trace trace_the_test.zip
     # and a trace viewer window will open!! (time travel feature is present)
+    # the website wher edrag&drop the trace.zip file is:
+    # =====> https://trace.playwright.dev/
     context.close()
     browser.close()
 
