@@ -1,0 +1,5 @@
+email,password,validity
+dango@accenture.com,testing000,valid
+invaliduser@example.com,wrongpassword,invalid
+validuser@example.com,wpassword!!,invalid
+,,invalid

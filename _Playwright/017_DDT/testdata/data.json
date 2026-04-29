@@ -1,0 +1,22 @@
+[
+  {
+    "email_user": "dango@accenture.com",
+    "password": "testing000",
+    "validity_credentials": "valid"
+  },
+  {
+    "email_user": "invaliduser@example.com",
+    "password": "wrongpassword",
+    "validity_credentials": "invalid"
+  },
+  {
+    "email_user": "validuser@example.com",
+    "password": "wrongpassword",
+    "validity_credentials": "invalid"
+  },
+  {
+    "email_user": "",
+    "password": "",
+    "validity_credentials": "invalid"
+  }
+]
