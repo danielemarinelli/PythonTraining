@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-class HomePage:
+class MyAccount:
     def __init__(self, page: Page):
         self.page = page
         # CSS selector targeting all product links under the product cards
