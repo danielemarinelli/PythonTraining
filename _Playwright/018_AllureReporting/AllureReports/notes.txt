@@ -1,0 +1,37 @@
+Allure reports
+-----------------
+
+Step 1: Install Allure Pytest Plugin
+
+	pip install allure-Pytest
+
+Step 2: Install Allure Command-Line Tool (to view and generate reports)
+
+for Windows : under https://github.com/allure-framework/allure2/releases download the zip file
+          and copy the folder somewhere in C: drive. Add bin folder in Env Variables
+for Mac: brew install allure
+
+Step 3: Configure Allure in pytest.ini
+
+[pytest]
+addopts = --alluredir=reports/allure-results
+
+Step 4: Create and Run Your Tests
+
+Step 5: Generate and View the Allure Report
+
+Run time:
+	allure serve reports/allure-results
+Permanent report:
+	allure generate reports/allure-results -o reports/allure-report --clean
+	----> and now you can click on index.html (inside allure-reports) to view the report
+
+Step 6: Attach Screenshots on Test Failures (conftest.py)
+        add this part:
+         allure.attach.file(
+                screen_file,
+                name="Failure Screenshot",
+                attachment_type=allure.attachment_type.PNG
+                )
+
+
